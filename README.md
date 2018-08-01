@@ -17,7 +17,7 @@
 ### 并发版爬虫(crawler)
 - frontend部分并没有做好
 - 架构    
-
+  ![架构](./assets/single_task/single_task.jpeg)
 ### 分布式版爬虫(crawler_distributed)
 - 需要依赖并发版爬虫的代码
 - 架构
