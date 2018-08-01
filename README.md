@@ -13,7 +13,7 @@
 
 ### 单任务版爬虫(single_task_crawler)
 - 架构
-![架构](./assets/single_task/single_task.jpeg)
+   ![架构](./assets/single_task/single_task.jpeg)
 
 ### 并发版爬虫(crawler)
 - frontend部分并没有做好
