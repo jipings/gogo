@@ -7,9 +7,9 @@
 
 
 
-## single_task_crawler, crawler, crawler_distributed 
+## Golang实现的爬虫
 
-[https://coding.imooc.com/class/180.html](内容来自这里)
+[内容来自这里](https://coding.imooc.com/class/180.html)
 
 ### 单任务版爬虫(single_task_crawler)
 - 架构
