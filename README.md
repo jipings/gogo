@@ -5,8 +5,7 @@
 
 ## Go LeetCode
 
-### tree
-
+### [tree](./goleetcode/tree)
 
 
 ## Golang实现的爬虫
@@ -33,7 +32,7 @@
 ![架构1](./assets/concurrent/1.jpeg)
 
 - Saver: 使用Elastic Search做数据库。开goroutine并通过channel接收数据并实现对数据的插入操作
-- Scheduler: 增加调度器模块管理worker的channel
+- Scheduler: 增加调度器模块管理worker的channel
 - 缺陷: 如果爬虫解析速度偏慢，会导致主循环部分无法读取out，in也无法写入，最终导致爬虫无法获取in中内容而陷入循环deadlock
 ``` go
     
@@ -55,7 +54,7 @@
 
 #### 架构2：
 
-在架构1上进行简单改进解除死锁。
+在架构1上简单改进解除deadlock。
 ![架构2](./assets/concurrent/2.jpeg)
 
 - 新开goroutine等待写入worker的接收channel
@@ -96,7 +95,7 @@
 - Worker Server: 可以运行在其他主机上，提供解析URL和爬取页面的服务
 - Work Client: 存在于Worker goroutine中，通实它现RPC
 - Saver Server: 可以运行在其他主机上，提供存储服务
-- Saver client: 存在于存储goroutine，调用它实现远程调用
+- Saver Client: 存在于存储goroutine，调用它实现远程调用
 - Pool of worker clients: 循环向各个爬虫分发pool中存在的worker client handle
 - 序列化和反序列化
 - 函数名的解析
