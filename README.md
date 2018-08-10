@@ -12,8 +12,8 @@
 
 [学习内容来自这里](https://coding.imooc.com/class/180.html)
 
-### Ⅰ. 单任务版爬虫(single_task_crawler)
-#### [架构：单任务结构](./single_task_crawler)
+### Ⅰ. [单任务版爬虫](./single_task_crawler)
+#### 架构：单任务结构
 
 ![架构](./assets/single_task/single_task.jpeg)
 
@@ -24,7 +24,7 @@
 - Fetcher: 获取URL对应的页面
 - ~~Saver~~: 暂无存储直接在控制台输出item
 
-### Ⅱ. 并发版爬虫(crawler)
+### Ⅱ. [并发版爬虫](./crawler)
 #### frontend部分并没有做好(TODO)
 #### 架构1: 
 
@@ -86,7 +86,7 @@
 - Worker Queue：存储对应每个Worker的接收channel
 
 
-### Ⅲ. 分布式版爬虫(crawler_distributed)
+### Ⅲ. [分布式版爬虫](./crawler_distributed)
 
 #### 架构：
 把原先所有的channel修改为RPC。
