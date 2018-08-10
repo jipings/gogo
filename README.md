@@ -13,7 +13,7 @@
 [学习内容来自这里](https://coding.imooc.com/class/180.html)
 
 ### Ⅰ. 单任务版爬虫(single_task_crawler)
-#### 架构：单任务结构
+#### [架构：单任务结构](./single_task_crawler)
 
 ![架构](./assets/single_task/single_task.jpeg)
 
@@ -81,7 +81,7 @@
 
 ![架构3](./assets/concurrent/3.jpeg)
 
-- 在engine中使用map数据结构进行查重
+- 在engine中使用map数据结构进行查重
 - Request Queue: 存储解析出来的requests
 - Worker Queue：存储对应每个Worker的接收channel
 
